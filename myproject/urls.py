@@ -4,5 +4,5 @@ from tree_menu.views import menu_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', menu_view, name='menu_view'),
+    path('', menu_view, name='menu_view'),  
 ]
