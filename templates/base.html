@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Древовидное меню</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'tree_menu/menu.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% load menu_tags %}
+        {% draw_menu 'main_menu' %}
+        
+        {% block content %}
+        <!-- Основное содержимое страницы -->
+        {% endblock %}
+    </div>
+</body>
+</html>
